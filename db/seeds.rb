@@ -1,12 +1,17 @@
-# This is the seeds file for populating the database with initial data.
-# Please modify this file to add the desired data for your application.
+# Create Users
+user1 = User.create(name: "John Doe")
+user2 = User.create(name: "Jane Smith")
+user3 = User.create(name: "Michael Johnson")
 
-# Example:
-# Uncomment the following lines to create some sample users
-# User.create(name: 'User 1', email: 'user1@example.com')
-# User.create(name: 'User 2', email: 'user2@example.com')
+# Create Products
+product1 = Product.create(name: "Product A")
+product2 = Product.create(name: "Product B")
+product3 = Product.create(name: "Product C")
 
-# Remember to run  to populate the database with this data.
+# Create Reviews
+Review.create(user: user1, product: product1, star_rating: 4, comment: "Great product!")
+Review.create(user: user2, product: product1, star_rating: 5, comment: "Excellent!")
+Review.create(user: user3, product: product2, star_rating: 3, comment: "Average product")
+Review.create(user: user1, product: product3, star_rating: 2, comment: "Not satisfied")
 
-puts "Seeding the database..."
-
+puts "Seed data created successfully!"
