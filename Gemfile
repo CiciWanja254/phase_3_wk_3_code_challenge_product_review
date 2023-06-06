@@ -9,4 +9,4 @@ gem 'sinatra-activerecord'
 gem 'sqlite3'
 gem 'yaml'
 gem 'pry'
-gem 'thin'
+
